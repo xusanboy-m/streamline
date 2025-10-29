@@ -9,6 +9,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     />
+    <script src="./streamline.js"></script>
   </head>
   <body>
     <!-- header section started -->
@@ -44,9 +45,12 @@
           </nav>
 
           <button
-            class="bg-[#10b981] text-white rounded-sm px-3 py-1.5 cursor-pointer hover:bg-emerald-600 transition-colors"
+            class="bg-[#10b981] text-white rounded-sm px-3 py-1.5 cursor-pointer hover:bg-emerald-600 transition-colors md:inline-block hidden"
           >
             Get started
+          </button>
+          <button class="cursor-pointer md:hidden">
+            <i class="fa-solid fa-bars"></i>
           </button>
         </div>
       </div>
@@ -55,8 +59,10 @@
     <!-- hero section start -->
     <section class="bg-white my-64">
       <div class="container mx-auto">
-        <div class="flex items-center justify-between gap-5">
-          <div class="">
+        <div
+          class="flex flex-col-reverse lg:flex-row items-center justify-between gap-5"
+        >
+          <div class="lg:w-1/2 text-center lg:text-left">
             <h1
               class="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
             >
@@ -66,7 +72,9 @@
               The all-in-one platform that helps teams collaborate, manage
               projects, and deliver results faster than ever before.
             </p>
-            <div class="flex items-center justify-between gap-2"></div>
+            <div
+              class="flex flex-col sm:flex-row items-center justify-center gap-2 lg:justify-start"
+            ></div>
             <button
               class="text-[#f8f8fc] bg-[#10b981] rounded-[6px] px-4 py-1.5 cursor-pointer hover:bg-emerald-600 transation-colors"
             >
@@ -104,7 +112,7 @@
         </div>
 
         <div
-          class="flex items-center justify-center max-w-5xl mx-auto gap-7 my-10"
+          class="md:flex items-center justify-center max-w-5xl mx-auto gap-7 my-10"
         >
           <div
             class="shadow-md text-center p-4 rounded-md hover:-translate-y-4 transition-transform duration-300"
@@ -577,7 +585,7 @@
       </div>
     </section>
     <!-- workflov section ends -->
-    <hr class="h-[1px] text-gray-500" />
+    <hr class="h-[1px] bg-slate-500" />
     <!-- footer section start -->
     <footer class="my-10">
       <div class="container mx-auto">
